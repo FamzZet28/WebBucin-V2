@@ -1,186 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="https://feeldreams.github.io/singkat/style.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
   
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Love You</title>
-  <meta name="description" content="Semangat beraktifitas ya sayang">
-  <meta name="author" content="Wafa Rifqi Anafin">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/efekteks.css">
-  <link rel="stylesheet" href="css/responsif.css">
-  <link rel="stylesheet" href="css/buciners.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
+<title>fahmii sayang rara</title>
 </head>
-
 <body>
-  <!--Author    : Wafa Rifki Anafin-->
-  <!--Facebook  : https://facebook.com/wafarifkianafin-->
-  <!--Instagram : https://instagram.com/wafarifki_-->
-  <!--Website   : https://wafarifki.tk-->
-  <div class="kontener2" id="kontener2">
-    <h1>Hai Sayang</h1>
-    <button class="tombol" id="tombol">Mulai Sekarang</button>
-  </div>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/vibescorona.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/wp4.jpg" id="wallpaper"/><div id="beneranblur"></div>
+   </div>
+   
+   <div id='Content'>
 
-  <div class="kontener" id="kontener">
-    <div class="dalemnya_kontener">
-      <h1 class="judul_halaman">I Love You</h1>
-      <a class="tombol_menu" onclick="klikMenu()"></a>
-      <section class="halaman1 dalemnya_halaman" onclick="PindahKeHalaman(0)">
-        <h1 class="judul_halaman">Aku</h1>
-        <br>
-        <img src="gambar/gambar1.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
-        <br>
-        <div class="ucapan1">
-          <p class="isiucapan1">Aku butuh kamu seperti jantung membutuhkan detik. Aku menginginkanmu seperti gurun pasir
-            yang mengharapkan hujan.</p>
-        </div>
-      </section>
-      <section class="halaman2 dalemnya_halaman" onclick="PindahKeHalaman(1)">
-        <h1 class="judul_halaman">Sayang</h1>
-        <br>
-        <img src="gambar/gambar2.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
-        <br>
-        <div class="ucapan2">
-          <p class="isiucapan2">Aku Menyayangimu bukan karena siapa dirimu melainkan apa yang terjadi saat aku
-            bersamamu.
-          </p>
-        </div>
-      </section>
-      <section class="halaman3 dalemnya_halaman" onclick="PindahKeHalaman(2)">
-        <h1 class="judul_halaman">Kamu</h1>
-        <br>
-        <img src="gambar/gambar3.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
-        <br>
-        <div class="ucapan3">
-          <p class="isiucapan3">Aku selalu berharap untuk dapat hadir di setiap mimpi indahmu. Kemudian, aku akan
-            mengatakan bahwa aku akan selalu merindukanmu.</p>
-        </div>
-      </section>
-      <section class="halaman4 dalemnya_halaman" onclick="PindahKeHalaman(3)">
-        <h1 class="judul_halaman">Anisa Aulia</h1>
-        <br>
-        <h1 id="waktu"></h1>
-        <script type="text/javascript">
-          document.write("<center>");
-          var hari = new Date();
-          var jam = hari.getHours();
-          if (jam >= 0 && jam < 12) {
-            document.write(
-              "<h1 class='ucapan'>Selamat Pagi Sayang!</h1><p class='isiucapan'>Saat aku membuka mata setiap harinya, yang ingin aku lihat hanya kamu. i love you sayang <3<p>"
-            );
-          } else if (jam == 12) {
-            document.write(
-              "<h1 class='ucapan'>Selamat Siang Sayang!</h1><p class='isiucapan'>Jangan Lupa Makan Yaa Sayang. i love you sayang <3<p>"
-            );
-          } else if (jam >= 12 && jam <= 17) {
-            document.write(
-              "<h1 class='ucapan'>Selamat Siang Menjelang Sore Sayang!</h1><p class='isiucapan'>Jangan Lupa Mandi + Jam demi jam telah kamu lalui dengan baik, persiapkan diri kamu untuk aktifitas yang akan datang ya sayang. i love you sayang <3<p>"
-            );
-          } else {
-            document.write(
-              "<h1 class='ucapan'>Selamat Malam Sayang!</h1><p class='isiucapan'>Setelah seharian beraktifitas, kini telah tiba saatnya untuk beristirahat, rebahkan dirimu di kasur kesayanganmu. kabari aku disetiap kegiatanmu. i love you sayang <3<p>"
-            );
-          }
-          document.write("</center>");
-        </script>
-      </section>
-    </div>
-  </div>
+     <div id="kadoIn">
+       <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png"/>
+     </div>
+     <p id="ket">Klik Kadonya!</p>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
-    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
-  <script src="js/script.js"></script>
-  <script>
-    document.getElementById("waktu").innerHTML = formatAMPM();
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker"/>
+         <img src="https://feeldreams.github.io/g5.gif" id="fotostiker2"/>
+         <img src="https://feeldreams.github.io/mndkat.gif" id="fotostiker3"/>
+         <img src="https://feeldreams.github.io/ywdh.gif" id="fotostiker4"/>
+         <img src="https://feeldreams.github.io/ngumpet.gif" id="fotostiker5"/>
+         <img src="https://feeldreams.github.io/smprt.gif" id="fotostiker6"/>
+         <img src="https://feeldreams.github.io/ciumin.gif" id="fotostiker7"/>
+     </div>
+     <p id="halo" class="halo">Hai, Kamu!</p>
+     <!-- Konten Pesan Setelah Aksi -->
+     <p id="halo2" class="halo">Sekian ✨</p>
+     
+     <!-- Konten Pesan Akhir -->
+     <p id="kalimatbawah">I Love You ❤️</p> 
+     <p id="kalimatbawah2" class="sembunyi">Semangat Terus yaa ❤️</p> 
+     <p id="kalimatbawah3" class="sembunyi">Aku Sayang Kamu ❤️</p>
+       
+     <div><blockquote id='bq' data-text='&#9829;'>
 
-    function formatAMPM() {
-      var waktu = new Date(),
-        menit = waktu.getMinutes().toString().length == 1 ? '0' + waktu.getMinutes() : waktu.getMinutes(),
-        jam = waktu.getHours().toString().length == 1 ? '0' + waktu.getHours() : waktu.getHours(),
-        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
-        bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
-          'November', 'Desember'
-        ],
-        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-      return '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
-          waktu.getDay()] +
-        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
-        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2"> ' + jam + ':' +
-        menit + ' ' + ampm + ' </p>';
+       <!-- Konten Pembukaan -->
+       <p id="kalimat">Aku Mau Nitip Pesan Nih...</p>
+       <p id="kalimatb">Makasii ya Udah Nemenin Aku Sampai Sejauh Ini ❤️</p>
+       <p id="kalimatc">Aku Bahagia Banget Bisa Dapetin Kamu.. ☺️</p>
+       <p id="kalimatd">Kamu Jangan Pergi yaa.. 🥺</p>
+       <p id="kalimate">Tetap Sama Aku Terus.. 🥺</p>
+       <p id="kalimatf">Gabole Sama yang Lain 🤬</p>
+       
+       <p id="opsL">Klik untuk Lanjut</p>
+       
+     </blockquote></div>
 
-    }
-  </script>
-  <script>
-    $(document).ready(function () {
-      var audio = new Audio('audio/audio.mp3');
-      $("#tombol").click(function () {
-        $("#kontener2").fadeOut();
-        $("#kontener").fadeIn("4000");
-        audio.play();
-      });
-    });
-  </script>
-  <script>
-    var textWrapper = document.querySelector('.ml1 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+     <!-- Tombol Kirim Pesan -->
+     <div id="Tombol"><a id="By">&#128140; Balas</a></div>
 
-    anime.timeline({
-        loop: false
-      })
-      .add({
-        targets: '.ml1 .letter',
-        scale: [0.3, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 600,
-        delay: (el, i) => 70 * (i + 1)
-      }).add({
-        targets: '.ml1 .line',
-        scaleX: [0, 1],
-        opacity: [0.5, 1],
-        easing: "easeOutExpo",
-        duration: 700,
-        offset: '-=875',
-        delay: (el, i, l) => 80 * (l - i)
-      }).add({
-        targets: '.ml1',
-        opacity: 1,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
-  </script>
-  <script>
-    var textWrapper = document.querySelector('.ml2');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+     <!-- Pesan yang dikirim ke WhatsApp -->
+     <span id="pesanWA" class="sembunyi">Aww, GoodNight too!</span>
+     
+   </div>
 
-    anime.timeline({
-        loop: false
-      })
-      .add({
-        targets: '.ml2 .letter',
-        scale: [4, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: 1400
-      }).add({
-        targets: '.ml2',
-        opacity: 1,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
-  </script>
-</body>
-
-</html>
+<!-- Jangan Edit Bagian Ini --><script>
+  const body = document.querySelector("body");inikuis=0;ftganti=0;flag=1;flagg=1;fungsi=0;ftfungsi=0;fungsiAwal=0;fungsitimer=0;vketikhalo=halo.innerHTML;halo.innerHTML = "";vketikhalo2=halo2.innerHTML;halo2.innerHTML = "";pesanwhatsapp = pesanWA.innerHTML;deffotostiker=fotostiker.src;audio = new Audio('' + linkmp3.src);Content.style = "opacity:1;margin-top:16vh;";const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+  function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+  async function menuju(){window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;} document.getElementById("kadoIn").onclick = function() {if(fungsiAwal==0){audio.play();fungsiAwal=1;kadoIn.style="transition:all .8s ease;transform:scale(10);opacity:0";wallpaper.style="transform: scale(1.5);";ket.style="displ
